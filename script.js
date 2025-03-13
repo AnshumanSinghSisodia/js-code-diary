@@ -14,5 +14,5 @@ console.log(s1)
 
 var s2=2
 
-console.log(s2 + 3)
+console.log(s2 + 3 + 7)
 // run via -----> ( node .\script.js ) in terminal.
