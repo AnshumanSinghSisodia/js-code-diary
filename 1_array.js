@@ -19,3 +19,33 @@ arr[1]='bentley'
 console.log(arr)
 
 console.log('The length of an array is', arr.length)
+
+// inbuilt js array methods
+
+var arr2=[12, 14, 56, 57]
+
+// pop method
+
+arr2.pop()
+
+console.log('popped array',arr2)
+
+// push method
+// add at the end
+arr2.push(100)
+
+console.log('pushed array',arr2)
+
+// shift method
+
+var d=arr2.shift()
+
+console.log(d)
+
+console.log('shifted array',arr2)
+
+// unshift array
+// just like push --> add value at the starting of the array
+arr2.unshift(102)
+
+console.log('unshifted array',arr2)
