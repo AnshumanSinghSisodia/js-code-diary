@@ -10,7 +10,7 @@ var colors = {
 // syntax
 
 for (var color in colors){
-    console.log(color , '->' , colors[color])
+    console.log(color , '->' , colors[color])     // color is the key here
 }
 
 
