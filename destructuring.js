@@ -20,7 +20,12 @@ console.log(e)
 let myObj = {
     name:'Adam',
     age:25,
-    gender:'M'
+    gender:'M',
+
+    address:{
+        country:'England',
+        city:'London'
+    }
 }
 
 let {p,q,r}=myObj
@@ -46,8 +51,18 @@ console.log(gender)
 // 25
 // M
 
+// alternative
 
+let {name: n,age: z,gender: g,address:{country: co}}=myObj
 
+console.log(n)
+console.log(z)
+console.log(g)
+console.log(co)
 
-
+// output:
+// Adam
+// 25
+// M
+// England
 
