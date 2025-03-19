@@ -1,11 +1,23 @@
-function printFirstName(firstName){
+function printFirstName(firstName, cb){
     console.log(firstName)
+    cb('Rogers')
 }
-
-printFirstName('Steve')
 
 function printLastName(lastName){
     console.log(lastName)
 }
 
-printLastName('Rogers')
+printFirstName('Steve', printLastName)    //callback
+
+// eg-
+
+const isEven=(n)=>{
+    return n%2==0
+}
+
+let printResult=(evenFn, num)=>{
+    const isNumEven=evenFn(num)
+    console.log(`The number ${num} is an even number ${isNumEven}`)
+}
+
+printResult(isEven, 16)
