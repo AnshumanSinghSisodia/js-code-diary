@@ -15,11 +15,12 @@ let arr=[
 
 let males= arr.filter((obj)=>{
     return obj.gender=='M'
-})
-
-let ageOfMales= males.map((male)=>{
+}).map((male)=>{
     return male.age
 })
 
+
 console.log(males)
-console.log(ageOfMales)
+
+// op- [ 14, 34, 44, 36 ]
+
