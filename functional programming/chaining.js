@@ -24,3 +24,21 @@ console.log(males)
 
 // op- [ 14, 34, 44, 36 ]
 
+
+
+
+// From the transaction array filter out positive elements and calculate the total amount 
+// use filter and reduce to achieve this
+
+
+const transactions=[1000,3000,4000,2000,-898,3800,-4500]
+
+let sumTransactions= transactions.filter((n)=>{
+    return n>0
+}).reduce((acc, num)=>{
+    return acc+num
+},0)
+
+console.log(sumTransactions)
+
+// op- 13800
