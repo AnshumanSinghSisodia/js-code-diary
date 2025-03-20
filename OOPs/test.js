@@ -1,5 +1,11 @@
- a =10    // doesn't give error
+'use strict'
 
-console.log(a)   //op- 10
+let b =10    
+
+console.log(b)  //op- 10
+
+a =10    
+
+console.log(a)   //op- error
 
 
