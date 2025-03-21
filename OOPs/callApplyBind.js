@@ -27,6 +27,7 @@ printDetails.call(person1)
 // Hi I am Tony Stark and I am 41 years old and I am from New York
 // Hi I am Steve Rogers and I am 102 years old and I am from undefined
 
+printDetails.apply(person2, ['New York'])   //use inside array Only difference from call
 
 // person1.printDetails()
 // person2.printDetails()
