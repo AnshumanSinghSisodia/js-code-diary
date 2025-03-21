@@ -32,3 +32,9 @@ printDetails.apply(person2, ['New York'])   //use inside array Only difference f
 // person1.printDetails()
 // person2.printDetails()
 
+// BIND method
+
+let myFun= printDetails.bind(person2, 'New York')
+console.log(myFun)               //op- [Function: bound printDetails]
+
+myFun()  // op- Hi I am Tony Stark and I am 41 years old and I am from New York
